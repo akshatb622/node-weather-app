@@ -31,13 +31,13 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-       title : 'About Me',
+       title : 'About',
        Name : 'Akshat' 
     });
 });
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title : 'Help Page',
+        title : 'Help-Page',
         msg : 'This is where you can search for your queries.',
         Name : 'Akshat'
     });
@@ -63,9 +63,10 @@ app.get('/weather',(req,res)=>{
                 });
             }
             res.send({
-                forecast : forecastData,
+                forecast : forecastData.forecastString,
                 location,
-                address : req.query.address
+                address : req.query.address,
+                weatherIcon : forecastData.weatherIcon
             })
         });
     });

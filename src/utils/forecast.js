@@ -11,7 +11,13 @@ const forecast = (longitude,latitude,callback)=>{
             callback("Unable to find location",undefined);
         }
         else{
-            data = body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out.There is a ' + body.current.precip + ' % chance of rain';
+            
+            forecastString = body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out.There is a ' + body.current.precip + ' % chance of rain';
+            weatherIcon = body.current.weather_icons[0];
+            data = {
+                forecastString,
+                weatherIcon    
+            }
             callback(undefined,data);
         }
     });
