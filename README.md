@@ -1,24 +1,24 @@
-# node-weather-app
+# Node-weather-app
 
 An App to show the current weather conditions of locations that you search. 
 
-#Requirements : 
+# Requirements : 
 
-You should have the following tools installed in your system.
-1) Node
-2) npm
-3) Git
+You should have the following tools installed in your system.<br>
+1) Node<br>
+2) npm<br>
+3) Git<br>
 
-#Common setup : 
-Clone the repo and install the dependencies.
+# Common setup : 
+Clone the repo and install the dependencies.<br>
 
-git clone https://github.com/akshatb622/node-weather-app.git
-npm install
+1) git clone https://github.com/akshatb622/node-weather-app.git <br>
+2) npm install <br>
 
-#Running the App : 
+# Running the App : 
 
-To start the express server, run the following
+To start the express server, run the following :<br> 
+npm run start<br>
 
-npm run start
 Open http://localhost:3000 and take a look around.
 
